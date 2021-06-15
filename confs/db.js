@@ -9,10 +9,9 @@ var credencials = {
         "db":"whatsapp"
 }
 
-
 var config = {
 
-        'uriExterno': 'mongodb://'+ credencials.user +':' + qs.escape(credencials.passwd) + '@'+ credencials.host +':'+ credencials.porta +'/'+ credencials.db +'?authSource=admin&readPreference=primary&appname=MongoDB%20Compass&ssl=false',
+        'uriExterno': 'mongodb+srv://'+ credencials.user +':' + qs.escape(credencials.passwd) + '@'+ credencials.host +'/'+ credencials.db +'?retryWrites=true&w=majority',
         'uriLocal':'mongodb://localhost:'+ credencials.porta +'/'+credencials.db               
 };
 
